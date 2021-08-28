@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        span{
+            color:yellow;
+        }
+        #html{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel 2s linear,myOrbit 10s linear infinite 2s;
+            z-index:100;
+            transition:5s;
+        }
+        #css{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel 2s linear 2s,myOrbit 10s linear infinite 4s;
+            z-index:80;
+        }
+        #js{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel 2s linear 4s,myOrbit 10s linear infinite 6s;
+            z-index:60;
+        }
+        #react{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel 2s linear 6s,myOrbit 10s linear infinite 8s;
+            z-index:40;
+        }
+        #boots{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel 2s linear 8s,myOrbit 10s linear infinite 10s;
+            z-index:20;
+        }
+        #c{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel1 2s linear 1s,myOrbit1 10s linear infinite 3s;
+            z-index:90;
+        }
+        #java{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel1 2s linear 3s,myOrbit1 10s linear infinite 5s;
+            z-index:70;
+        }
+        #sql{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel1 2s linear 5s,myOrbit1 10s linear infinite 7s;
+            z-index:50;
+        }
+        #cpp{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel1 2s linear 7s,myOrbit1 10s linear infinite 9s;
+            z-index:30;
+        }
+        #jquery{
+            position: absolute;
+            left:500px;
+            top:300px;
+            animation: travel1 2s linear 9s,myOrbit1 10s linear infinite 11s;
+            z-index:10;
+        }
+        @keyframes travel1 {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(100px);
+            }
+        }
+        @keyframes travel {
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(200px);
+            }
+        }
+        @keyframes myOrbit {
+            from{
+                transform: rotate(0deg) translateX(200px);
+            }
+            to{
+                transform: rotate(360deg) translateX(200px);
+            }
+        }
+        @keyframes myOrbit1 {
+            from{
+                transform: rotate(0deg) translateX(100px);
+            }
+            to{
+                transform: rotate(-360deg) translateX(100px);
+            }
+        }
+        #me{
+            position:absolute;
+            left:500px;
+            top:300px;
+            z-index:1000;
+        }
+        .skills{
+            animation: skill 5s linear infinite 12s;
+            position: absolute;
+            
+        }
+        @keyframes skill {
+           0%{
+               transform: translateY(0px);
+           }
+           50%{
+               transform: translateY(-50px);
+           }
+           100%{
+               transform: translateY(0px);
+           }
+        }
+        .container{
+  position: relative;
+  height: 100px;
+}
+
+#movediv{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color:chartreuse;
+  display: none;
+}
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="skills">
+    <span id="me"><img class="rounded-circle" height="60px" width="60px" src="me.jpg"/></span>
+    <span id="html"><img class="rounded-circle" height="60px" width="60px" src="https://hackr.io/tutorials/learn-html-5/logo/logo-html-5?ver=1587977020"/></span>
+    <span id="css"><img class="rounded-circle" height="60px" width="60px" src="https://www.tutorialpandit.com/wp-content/uploads/2018/09/css.png"/></span>
+    <span id="js"><img class="rounded-circle" height="60px" width="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxyftUbBjONEO7UzBeTPNKVwt39HNUOzpPPTlPTKZohZCHVGfW8qKN4O6unkmalUnTTfE&usqp=CAU"/></span>
+    <span id="boots"><img class="rounded-circle" height="60px" width="60px" src="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png"/></span>
+    <span id="react"><img class="rounded-circle" height="60px" width="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1VXB2HdTYRUnk7Vu6gUxZ2ws06hooy-GtYDOkVrE69pAsrGzUuXhZsqKiaEs6woxaZMg&usqp=CAU"/></span>
+    <span id="c"><img class="rounded-circle" height="60px" width="60px" src="https://geekboots.sfo2.cdn.digitaloceanspaces.com/post/why-c-is-so-popular-and-still-the-best-programming-language-1564571756694.jpg"/></span>
+    <span id="java"><img class="rounded-circle" height="60px" width="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGyTJ4GdwpqPMOVv72uncVsoIqxHeokSyvzG1LTqfmLtiB3F2UQVEvFZm_HVd8PAwoQ9g&usqp=CAU"/></span>
+    <span id="sql"><img class="rounded-circle" height="60px" width="60px" src="https://pbs.twimg.com/profile_images/1269972369940103169/BEBFAgFx.jpg"/></span>
+    <span id="cpp"><img class="rounded-circle" height="60px" width="60px" src="https://i.redd.it/31b2ii8hchi31.jpg"/></span>
+    <span id="jquery"><img class="rounded-circle" height="60px" width="60px" src="https://www.kindpng.com/picc/m/787-7876133_jquery-hd-png-download.png"/></span>
+    </div>
+    <div class="container">
+        <div id="movediv"></div>
+    </div>
+    <script>
+        var moveDiv = document.getElementById('movediv');
+
+window.onmousemove = function (e) {
+    moveDiv.style.display="block";
+    var x = e.pageX,
+        y = e.pageY;
+    moveDiv.style.top = (y-20) + 'px';
+    moveDiv.style.left = (x-85) + 'px';
+};
+</script>
+</body>
+</html>
